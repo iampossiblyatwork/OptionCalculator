@@ -18,7 +18,6 @@ shares.
 ## Run locally
 
 ```bash
-cd options-calculator
 pip install -r requirements.txt
 python app.py            # dev server on http://localhost:8000
 ```
@@ -39,7 +38,6 @@ pytest                   # math + Flask API
 ## Docker
 
 ```bash
-cd options-calculator
 docker build -t options-calculator .
 docker run -p 8000:8000 options-calculator
 # open http://localhost:8000
@@ -52,20 +50,20 @@ hosts that inject a port.
 
 Two ways:
 
-**Blueprint (recommended).** This repo ships a `render.yaml` at its root that
-points at this folder. In Render: **New → Blueprint**, connect the repo, and
-Render builds the Docker image here and runs it. `$PORT` and the health check
+**Blueprint (recommended).** This repo ships a `render.yaml` at its root. In
+Render: **New → Blueprint**, connect the repo, and Render builds the Docker
+image from the repo root and runs it. `$PORT` and the health check
 (`/healthz`) are wired up for you.
 
 **Manual web service.** In Render: **New → Web Service**, connect the repo, and
 set:
 
 - **Runtime:** Docker
-- **Root Directory:** `options-calculator`
 - **Health Check Path:** `/healthz`
 
-Render provides `$PORT` automatically; the Dockerfile's gunicorn command already
-binds to it.
+Leave Root Directory, Dockerfile Path, and Docker Build Context Directory at
+their defaults — the Dockerfile lives at the repo root. Render provides
+`$PORT` automatically; the Dockerfile's gunicorn command already binds to it.
 
 ## Layout
 

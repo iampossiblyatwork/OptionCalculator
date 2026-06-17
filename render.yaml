@@ -1,16 +1,12 @@
 # Render Blueprint — deploys the Options Premium Calculator (Flask + Docker).
 # Render auto-detects render.yaml at the repo root. Connect this repo as a
-# Blueprint in Render and it will build the Docker image in options-calculator/
-# and run it. $PORT is provided by Render automatically.
+# Blueprint in Render and it will build the Docker image from the repo root
+# (Dockerfile and build context both default to the repo root) and run it.
+# $PORT is provided by Render automatically.
 services:
   - type: web
     name: options-premium-calculator
     runtime: docker
-    # Both paths are relative to the repo root. dockerContext must be set
-    # explicitly because it otherwise defaults to the repo root, not to the
-    # folder the Dockerfile lives in — which would break the Dockerfile's COPY.
-    dockerfilePath: ./options-calculator/Dockerfile
-    dockerContext: ./options-calculator
     plan: free
     healthCheckPath: /healthz
     autoDeploy: true
