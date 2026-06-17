@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Options Premium Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="app-title">
+        <span class="app-title-main">Options Premium Calculator</span>
+        <span class="app-title-sub">Premium · breakeven · risk · returns</span>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <p class="view-intro">
+        Estimate what you collect or pay on an options trade, where it breaks
+        even, and the most you can make or lose. Premium is set by the market, so
+        enter the price you see quoted — or flip on the Black–Scholes estimator if
+        you don't have a quote yet. One contract = {{ shares_per_contract }} shares.
+      </p>
+
+      <div class="opt-grid">
+        <!-- Inputs -->
+        <form id="opt-form" class="opt-form">
+          <label class="field">
+            <span class="field-label">Strategy</span>
+            <select id="strategy" name="strategy">
+              {% for s in strategies %}
+              <option value="{{ s.id }}" data-fields="{{ s.fields|join(',') }}">
+                {{ s.label }}
+              </option>
+              {% endfor %}
+            </select>
+          </label>
+          <p id="blurb" class="opt-blurb"></p>
+
+          <div class="opt-field-row">
+            <label class="field inline">
+              <span class="field-label">Contracts</span>
+              <input class="num" type="number" id="contracts" value="1" min="1" step="1" />
+            </label>
+            <label class="field inline">
+              <span class="field-label">Days to expiration</span>
+              <input class="num" type="number" id="days" value="30" min="0" step="1" />
+            </label>
+          </div>
+
+          <!-- Strategy-specific fields injected here -->
+          <div id="strategy-fields"></div>
+
+          <label class="opt-toggle">
+            <input type="checkbox" id="usePricer" />
+            <span>Estimate premium with Black–Scholes</span>
+          </label>
+
+          <div id="pricer" class="opt-pricer" hidden>
+            <div class="opt-field-row">
+              <label class="field inline">
+                <span class="field-label">Spot price ($)</span>
+                <input class="num" type="number" id="spot" value="105" step="any" />
+              </label>
+              <label class="field inline">
+                <span class="field-label">Implied vol (%)</span>
+                <input class="num" type="number" id="ivPct" value="30" step="any" />
+              </label>
+            </div>
+            <div class="opt-field-row">
+              <label class="field inline">
+                <span class="field-label">Risk-free rate (%)</span>
+                <input class="num" type="number" id="ratePct" value="4" step="any" />
+              </label>
+              <label class="field inline">
+                <span class="field-label">Dividend yield (%)</span>
+                <input class="num" type="number" id="divPct" value="0" step="any" />
+              </label>
+            </div>
+            <div id="estimates" class="opt-estimates"></div>
+            <p class="opt-note">
+              Theoretical estimate only — the real premium is whatever the market
+              is quoting. Δ shows each leg's delta per share.
+            </p>
+          </div>
+        </form>
+
+        <!-- Results -->
+        <section class="opt-results">
+          <div class="opt-headline">
+            <span class="opt-headline-label" id="headline-label">Net premium</span>
+            <span class="opt-headline-value" id="headline-value">—</span>
+          </div>
+
+          <div class="opt-metrics" id="core-metrics"></div>
+          <div class="opt-metrics opt-metrics-sub" id="income-metrics"></div>
+
+          <div class="opt-chart">
+            <div class="opt-chart-title">Profit / loss at expiration</div>
+            <canvas id="payoff" class="opt-chart-canvas"></canvas>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
