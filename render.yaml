@@ -6,8 +6,11 @@ services:
   - type: web
     name: options-premium-calculator
     runtime: docker
-    rootDir: options-calculator
+    # Both paths are relative to the repo root. dockerContext must be set
+    # explicitly because it otherwise defaults to the repo root, not to the
+    # folder the Dockerfile lives in — which would break the Dockerfile's COPY.
     dockerfilePath: ./options-calculator/Dockerfile
+    dockerContext: ./options-calculator
     plan: free
     healthCheckPath: /healthz
     autoDeploy: true
