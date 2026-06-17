@@ -7,7 +7,7 @@ services:
     name: options-premium-calculator
     runtime: docker
     rootDir: options-calculator
-    dockerfilePath: Dockerfile
+    dockerfilePath: ./options-calculator/Dockerfile
     plan: free
     healthCheckPath: /healthz
     autoDeploy: true
