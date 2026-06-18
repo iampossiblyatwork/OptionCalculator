@@ -70,9 +70,47 @@
     update();
   }
 
+  const RANGES = { spot: [1, 300], strike: [1, 300], days: [1, 730],
+    iv: [1, 200], rate: [0, 15], div: [0, 15] };
+
+  function sweep({ raw, variable, metric, steps = 60 }) {
+    const [lo, hi] = RANGES[variable];
+    const pts = [];
+    for (let i = 0; i <= steps; i++) {
+      const x = lo + (hi - lo) * i / steps;
+      const r = BS.blackScholes(readInputs({ ...raw, [variable]: x }));
+      pts.push({ x, y: r[metric] });
+    }
+    return pts;
+  }
+
+  function drawSweep(doc, raw) {
+    const canvas = doc.getElementById("sweep-chart");
+    if (!canvas || !canvas.getContext) return;
+    const variable = doc.getElementById("sweep-var").value;
+    const metric = doc.getElementById("sweep-metric").value;
+    const pts = sweep({ raw, variable, metric });
+    const ctx = canvas.getContext("2d");
+    const W = canvas.width, H = canvas.height, pad = 36;
+    ctx.clearRect(0, 0, W, H);
+    const xs = pts.map((p) => p.x), ys = pts.map((p) => p.y);
+    const xMin = Math.min(...xs), xMax = Math.max(...xs);
+    const yMin = Math.min(...ys), yMax = Math.max(...ys);
+    const sx = (x) => pad + (W - 2 * pad) * (x - xMin) / (xMax - xMin || 1);
+    const sy = (y) => H - pad - (H - 2 * pad) * (y - yMin) / (yMax - yMin || 1);
+    ctx.strokeStyle = "#888"; ctx.beginPath();
+    ctx.moveTo(pad, H - pad); ctx.lineTo(W - pad, H - pad);
+    ctx.moveTo(pad, pad); ctx.lineTo(pad, H - pad); ctx.stroke();
+    ctx.strokeStyle = "#2b8a3e"; ctx.lineWidth = 2; ctx.beginPath();
+    pts.forEach((p, i) => (i ? ctx.lineTo(sx(p.x), sy(p.y)) : ctx.moveTo(sx(p.x), sy(p.y))));
+    ctx.stroke();
+    ctx.fillStyle = "#444"; ctx.font = "12px system-ui";
+    ctx.fillText(`${metric} vs ${variable}`, pad, pad - 12);
+  }
+
   if (typeof document !== "undefined") {
     document.addEventListener("DOMContentLoaded", () => wire(document));
   }
 
-  return { readInputs, formatPrice, formatGreeks, formatProb, wire };
+  return { readInputs, formatPrice, formatGreeks, formatProb, wire, sweep, drawSweep };
 });
