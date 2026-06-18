@@ -5,15 +5,24 @@ premium you collect or pay, where the trade breaks even, the most you can make
 or lose, an at-expiration profit/loss chart, and return metrics for income
 strategies (covered calls and cash-secured puts).
 
-> Premium is set by the market, not derived from the strike. Enter the price you
-> see quoted. If you don't have a quote, flip on the **Black–Scholes estimator**
-> to get a theoretical price — but treat it as an estimate only.
+> Black–Scholes is now the **default** premium source — the calculator prices
+> each leg theoretically from spot, strike, time, volatility, and rate. Toggle
+> it off if you have a market quote you'd rather type in manually.
 
 ## Strategies
 
 Covered call · cash-secured put · long call · long put · short (naked) call ·
 short (naked) put · bull call spread · bear put spread. One contract = 100
 shares.
+
+## Learning Playground
+
+Visit `/playground` for an interactive Black–Scholes sandbox: drag sliders for
+spot, strike, time, implied volatility, rate, and dividend and watch the premium
+and all five Greeks (delta, gamma, theta, vega, rho) update live, plus the
+probability of finishing in-the-money. The sweep chart plots how the premium or
+any Greek responds as you vary one input. European options only — no early
+exercise.
 
 ## Run locally
 
@@ -33,6 +42,13 @@ gunicorn --bind 0.0.0.0:8000 app:app
 ```bash
 pip install pytest
 pytest                   # math + Flask API
+```
+
+The JavaScript Black–Scholes twin and playground helpers have their own suite
+(Node's built-in test runner — no install needed):
+
+```bash
+node --test tests/*.test.js
 ```
 
 ## Docker
@@ -67,8 +83,11 @@ their defaults — the Dockerfile lives at the repo root. Render provides
 
 ## Layout
 
-- `app.py` — Flask routes: the page (`/`), the calc API (`/api/calculate`), health (`/healthz`)
+- `app.py` — Flask routes: the page (`/`), the playground (`/playground`), the calc API (`/api/calculate`), health (`/healthz`)
 - `options.py` — pure trade-economics + Black–Scholes math (no dependencies)
 - `templates/index.html`, `static/` — the UI (vanilla JS, canvas payoff chart)
+- `static/bs.js` — pure JS Black–Scholes twin used by the playground (kept in parity with `options.py` via `tests/bs_parity.test.js`)
+- `static/playground.js` — playground slider wiring + sweep chart
+- `templates/playground.html` — the Learning Playground page
 - `test_options.py` — pytest suite for the math and the API
 - `Dockerfile`, `requirements.txt` — container + deps

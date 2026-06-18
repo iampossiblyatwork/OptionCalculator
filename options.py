@@ -280,6 +280,12 @@ def black_scholes(
             "theta": 0.0,
             "vega": 0.0,
             "rho": 0.0,
+            "d1": 0.0,
+            "d2": 0.0,
+            "n_d1": 0.0,
+            "n_d2": 0.0,
+            "prob_itm": 1.0 if itm else 0.0,
+            "moneyness": (S / K) if K > 0 else 0.0,
         }
 
     sqrt_t = math.sqrt(T)
@@ -310,6 +316,8 @@ def black_scholes(
     gamma = disc_q * _norm_pdf(d1) / (S * sigma * sqrt_t)
     vega = S * disc_q * _norm_pdf(d1) * sqrt_t / 100.0
 
+    prob_itm = norm_cdf(d2) if type == "call" else norm_cdf(-d2)
+
     return {
         "price": price,
         "delta": delta,
@@ -317,4 +325,10 @@ def black_scholes(
         "theta": theta,
         "vega": vega,
         "rho": rho,
+        "d1": d1,
+        "d2": d2,
+        "n_d1": norm_cdf(d1),
+        "n_d2": norm_cdf(d2),
+        "prob_itm": prob_itm,
+        "moneyness": S / K,
     }

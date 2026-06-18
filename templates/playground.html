@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Options Learning Playground</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="playground">
+    <h1>Options Learning Playground</h1>
+    <p class="note">European Black–Scholes pricing — no early exercise. Theoretical estimate only.</p>
+
+    <section class="controls">
+      <label>Type
+        <select id="type"><option value="call">Call</option><option value="put">Put</option></select>
+      </label>
+      <label>Spot <input type="range" id="spot" min="1" max="300" step="1" value="100"><output id="spot-val">100</output></label>
+      <label>Strike <input type="range" id="strike" min="1" max="300" step="1" value="100"><output id="strike-val">100</output></label>
+      <label>Days to expiry <input type="range" id="days" min="1" max="730" step="1" value="30"><output id="days-val">30</output></label>
+      <label>IV % <input type="range" id="iv" min="1" max="200" step="1" value="30"><output id="iv-val">30</output></label>
+      <label>Risk-free % <input type="range" id="rate" min="0" max="15" step="0.1" value="4"><output id="rate-val">4</output></label>
+      <label>Dividend % <input type="range" id="div" min="0" max="15" step="0.1" value="0"><output id="div-val">0</output></label>
+    </section>
+
+    <section class="outputs">
+      <div id="price-out" class="price"></div>
+      <div id="prob-out" class="prob"></div>
+      <div id="greeks-out" class="greeks"></div>
+    </section>
+
+    <section class="sweep">
+      <label>Sweep variable
+        <select id="sweep-var">
+          <option value="spot">Spot</option><option value="iv">IV</option>
+          <option value="days">Days</option><option value="rate">Rate</option>
+        </select>
+      </label>
+      <label>Plot
+        <select id="sweep-metric">
+          <option value="price">Premium</option><option value="delta">Delta</option>
+          <option value="gamma">Gamma</option><option value="theta">Theta</option>
+          <option value="vega">Vega</option>
+        </select>
+      </label>
+      <canvas id="sweep-chart" width="640" height="320"></canvas>
+    </section>
+  </main>
+  <script src="/static/bs.js"></script>
+  <script src="/static/playground.js"></script>
+</body>
+</html>

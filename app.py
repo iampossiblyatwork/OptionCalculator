@@ -133,6 +133,11 @@ def index():
     )
 
 
+@app.get("/playground")
+def playground():
+    return render_template("playground.html")
+
+
 @app.get("/healthz")
 def healthz():
     return jsonify(status="ok")
@@ -161,7 +166,7 @@ def calculate():
         "ratePct": _num(data, "ratePct", 4),
         "divPct": _num(data, "divPct", 0),
     }
-    use_pricer = bool(data.get("usePricer", False))
+    use_pricer = bool(data.get("usePricer", True))
 
     leg_defs = _leg_defs(strategy_id, inputs)
 

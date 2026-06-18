@@ -184,6 +184,7 @@ def test_calculate_covered_call(client):
             "currentPrice": 105,
             "strike": 110,
             "premium": 3,
+            "usePricer": False,
         },
     )
     assert resp.status_code == 200
@@ -194,6 +195,19 @@ def test_calculate_covered_call(client):
     assert d["incomeType"] == "coveredCall"
     assert d["income"]["return_if_called"] == pytest.approx(0.13)
     assert len(d["payoff"]) == 121
+
+
+def test_calculate_defaults_to_pricer(client):
+    # No usePricer flag and no manual premium -> premium comes from Black-Scholes.
+    resp = client.post(
+        "/api/calculate",
+        json={
+            "strategy": "long-call", "contracts": 1, "days": 365,
+            "strike": 100, "spot": 100, "ivPct": 20, "ratePct": 5,
+        },
+    )
+    d = resp.get_json()
+    assert d["legs"][0]["premium"] == pytest.approx(10.45, abs=0.05)
 
 
 def test_calculate_with_pricer(client):
@@ -219,3 +233,42 @@ def test_calculate_with_pricer(client):
 def test_calculate_unknown_strategy(client):
     resp = client.post("/api/calculate", json={"strategy": "nope"})
     assert resp.status_code == 400
+
+
+def test_black_scholes_teaching_outputs():
+    r = opt.black_scholes(
+        type="call", spot=100, strike=100, days_to_expiration=365,
+        volatility=0.2, risk_free_rate=0.05,
+    )
+    # d1, d2 for ATM 1y 20% vol 5% rate (known values)
+    assert r["d1"] == pytest.approx(0.35, abs=0.01)
+    assert r["d2"] == pytest.approx(0.15, abs=0.01)
+    assert r["n_d1"] == pytest.approx(opt.norm_cdf(r["d1"]), abs=1e-9)
+    assert r["n_d2"] == pytest.approx(opt.norm_cdf(r["d2"]), abs=1e-9)
+    # Call prob-ITM is N(d2); put prob-ITM is N(-d2); they sum to 1.
+    p = opt.black_scholes(
+        type="put", spot=100, strike=100, days_to_expiration=365,
+        volatility=0.2, risk_free_rate=0.05,
+    )
+    assert r["prob_itm"] == pytest.approx(r["n_d2"], abs=1e-9)
+    assert r["prob_itm"] + p["prob_itm"] == pytest.approx(1.0, abs=1e-9)
+    assert r["moneyness"] == pytest.approx(1.0)
+
+
+def test_black_scholes_teaching_outputs_degenerate():
+    r = opt.black_scholes(
+        type="call", spot=110, strike=100, days_to_expiration=0, volatility=0.2,
+    )
+    assert r["d1"] == 0.0 and r["d2"] == 0.0
+    assert r["prob_itm"] == 1.0          # currently in-the-money
+    assert r["moneyness"] == pytest.approx(1.1)
+
+
+def test_playground_serves_html(client):
+    resp = client.get("/playground")
+    assert resp.status_code == 200
+    body = resp.data
+    for token in (b'id="spot"', b'id="strike"', b'id="iv"', b'id="days"',
+                  b'id="sweep-chart"', b'bs.js', b'playground.js'):
+        assert token in body
+    assert b"European" in body  # early-exercise disclaimer
