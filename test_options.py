@@ -219,3 +219,32 @@ def test_calculate_with_pricer(client):
 def test_calculate_unknown_strategy(client):
     resp = client.post("/api/calculate", json={"strategy": "nope"})
     assert resp.status_code == 400
+
+
+def test_black_scholes_teaching_outputs():
+    r = opt.black_scholes(
+        type="call", spot=100, strike=100, days_to_expiration=365,
+        volatility=0.2, risk_free_rate=0.05,
+    )
+    # d1, d2 for ATM 1y 20% vol 5% rate (known values)
+    assert r["d1"] == pytest.approx(0.35, abs=0.01)
+    assert r["d2"] == pytest.approx(0.15, abs=0.01)
+    assert r["n_d1"] == pytest.approx(opt.norm_cdf(r["d1"]), abs=1e-9)
+    assert r["n_d2"] == pytest.approx(opt.norm_cdf(r["d2"]), abs=1e-9)
+    # Call prob-ITM is N(d2); put prob-ITM is N(-d2); they sum to 1.
+    p = opt.black_scholes(
+        type="put", spot=100, strike=100, days_to_expiration=365,
+        volatility=0.2, risk_free_rate=0.05,
+    )
+    assert r["prob_itm"] == pytest.approx(r["n_d2"], abs=1e-9)
+    assert r["prob_itm"] + p["prob_itm"] == pytest.approx(1.0, abs=1e-9)
+    assert r["moneyness"] == pytest.approx(1.0)
+
+
+def test_black_scholes_teaching_outputs_degenerate():
+    r = opt.black_scholes(
+        type="call", spot=110, strike=100, days_to_expiration=0, volatility=0.2,
+    )
+    assert r["d1"] == 0.0 and r["d2"] == 0.0
+    assert r["prob_itm"] == 1.0          # currently in-the-money
+    assert r["moneyness"] == pytest.approx(1.1)
