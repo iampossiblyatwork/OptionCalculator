@@ -248,3 +248,13 @@ def test_black_scholes_teaching_outputs_degenerate():
     assert r["d1"] == 0.0 and r["d2"] == 0.0
     assert r["prob_itm"] == 1.0          # currently in-the-money
     assert r["moneyness"] == pytest.approx(1.1)
+
+
+def test_playground_serves_html(client):
+    resp = client.get("/playground")
+    assert resp.status_code == 200
+    body = resp.data
+    for token in (b'id="spot"', b'id="strike"', b'id="iv"', b'id="days"',
+                  b'id="sweep-chart"', b'bs.js', b'playground.js'):
+        assert token in body
+    assert b"European" in body  # early-exercise disclaimer

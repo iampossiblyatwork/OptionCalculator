@@ -133,6 +133,11 @@ def index():
     )
 
 
+@app.get("/playground")
+def playground():
+    return render_template("playground.html")
+
+
 @app.get("/healthz")
 def healthz():
     return jsonify(status="ok")
