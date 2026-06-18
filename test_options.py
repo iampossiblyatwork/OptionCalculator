@@ -184,6 +184,7 @@ def test_calculate_covered_call(client):
             "currentPrice": 105,
             "strike": 110,
             "premium": 3,
+            "usePricer": False,
         },
     )
     assert resp.status_code == 200
@@ -194,6 +195,19 @@ def test_calculate_covered_call(client):
     assert d["incomeType"] == "coveredCall"
     assert d["income"]["return_if_called"] == pytest.approx(0.13)
     assert len(d["payoff"]) == 121
+
+
+def test_calculate_defaults_to_pricer(client):
+    # No usePricer flag and no manual premium -> premium comes from Black-Scholes.
+    resp = client.post(
+        "/api/calculate",
+        json={
+            "strategy": "long-call", "contracts": 1, "days": 365,
+            "strike": 100, "spot": 100, "ivPct": 20, "ratePct": 5,
+        },
+    )
+    d = resp.get_json()
+    assert d["legs"][0]["premium"] == pytest.approx(10.45, abs=0.05)
 
 
 def test_calculate_with_pricer(client):

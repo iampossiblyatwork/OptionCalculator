@@ -166,7 +166,7 @@ def calculate():
         "ratePct": _num(data, "ratePct", 4),
         "divPct": _num(data, "divPct", 0),
     }
-    use_pricer = bool(data.get("usePricer", False))
+    use_pricer = bool(data.get("usePricer", True))
 
     leg_defs = _leg_defs(strategy_id, inputs)
 

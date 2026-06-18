@@ -12,14 +12,15 @@
         <span class="app-title-main">Options Premium Calculator</span>
         <span class="app-title-sub">Premium · breakeven · risk · returns</span>
       </div>
+      <a href="/playground">Open the learning playground →</a>
     </header>
 
     <main class="app-main">
       <p class="view-intro">
         Estimate what you collect or pay on an options trade, where it breaks
-        even, and the most you can make or lose. Premium is set by the market, so
-        enter the price you see quoted — or flip on the Black–Scholes estimator if
-        you don't have a quote yet. One contract = {{ shares_per_contract }} shares.
+        even, and the most you can make or lose. Premium defaults to a
+        Black–Scholes estimate — toggle it off if you have a market quote you'd
+        rather type in. One contract = {{ shares_per_contract }} shares.
       </p>
 
       <div class="opt-grid">
@@ -52,11 +53,11 @@
           <div id="strategy-fields"></div>
 
           <label class="opt-toggle">
-            <input type="checkbox" id="usePricer" />
+            <input type="checkbox" id="usePricer" checked />
             <span>Estimate premium with Black–Scholes</span>
           </label>
 
-          <div id="pricer" class="opt-pricer" hidden>
+          <div id="pricer" class="opt-pricer">
             <div class="opt-field-row">
               <label class="field inline">
                 <span class="field-label">Spot price ($)</span>
