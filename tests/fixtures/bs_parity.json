@@ -4,6 +4,306 @@
       "type": "call",
       "spot": 50,
       "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 80,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -1197,6 +1497,306 @@
       "n_d2": 0.16477900483167546,
       "prob_itm": 0.16477900483167546,
       "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.5
     }
   },
   {
@@ -2404,6 +3004,306 @@
       "type": "call",
       "spot": 50,
       "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 50,
+      "strike": 120,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -3597,6 +4497,306 @@
       "n_d2": 0.06919197922142262,
       "prob_itm": 0.06919197922142262,
       "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.125
     }
   },
   {
@@ -4804,6 +6004,306 @@
       "type": "call",
       "spot": 90,
       "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 100,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -5997,6 +7497,306 @@
       "n_d2": 0.3018104148026523,
       "prob_itm": 0.3018104148026523,
       "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.75
     }
   },
   {
@@ -7204,6 +9004,306 @@
       "type": "call",
       "spot": 100,
       "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 20,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 20,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 20,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 20,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 20,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 20,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 20,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 20,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 20,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 20,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 20,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 20,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 80,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -8397,6 +10497,306 @@
       "n_d2": 0.4567715558615686,
       "prob_itm": 0.4567715558615686,
       "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
     }
   },
   {
@@ -9604,6 +12004,306 @@
       "type": "call",
       "spot": 100,
       "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 100,
+      "strike": 120,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -10797,6 +13497,306 @@
       "n_d2": 0.2691446532943429,
       "prob_itm": 0.2691446532943429,
       "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.375
     }
   },
   {
@@ -12004,6 +15004,306 @@
       "type": "call",
       "spot": 110,
       "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 100,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -13197,6 +16497,306 @@
       "n_d2": 0.39421023738587935,
       "prob_itm": 0.39421023738587935,
       "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 0.9166666666666666
     }
   },
   {
@@ -14404,6 +18004,306 @@
       "type": "call",
       "spot": 150,
       "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 70,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 70,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 70,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 70,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 70,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 70,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 70,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 70,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 70,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 70,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 70,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 70,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 80,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -15597,6 +19497,306 @@
       "n_d2": 0.6547810326108308,
       "prob_itm": 0.6547810326108308,
       "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 50,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 50,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 50,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 50,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 50,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 50,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 50,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 50,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 50,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 50,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 50,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 50,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.5
     }
   },
   {
@@ -16804,6 +21004,306 @@
       "type": "call",
       "spot": 150,
       "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": 1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "call",
+      "spot": 150,
+      "strike": 120,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -17997,6 +22497,306 @@
       "n_d2": 0.4567715558615686,
       "prob_itm": 0.4567715558615686,
       "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.625
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.625
     }
   },
   {
@@ -19204,6 +24004,306 @@
       "type": "put",
       "spot": 50,
       "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 50,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 50,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 50,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 50,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 50,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 50,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 50,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 50,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 50,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 50,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 50,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 50,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 100,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -20397,6 +25497,306 @@
       "n_d2": 0.1049330022496241,
       "prob_itm": 0.8950669977503759,
       "moneyness": 0.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 70,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 70,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 70,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 70,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 70,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 70,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 70,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 70,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 70,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 70,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 70,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.4166666666666667
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 50,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 70,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.4166666666666667
     }
   },
   {
@@ -21604,6 +27004,306 @@
       "type": "put",
       "spot": 90,
       "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 80,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -22797,6 +28497,306 @@
       "n_d2": 0.4050600079940394,
       "prob_itm": 0.5949399920059606,
       "moneyness": 1.125
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9
     }
   },
   {
@@ -24004,6 +30004,306 @@
       "type": "put",
       "spot": 90,
       "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 30,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 90,
+      "strike": 120,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -25197,6 +31497,306 @@
       "n_d2": 0.22750081829457502,
       "prob_itm": 0.772499181705425,
       "moneyness": 0.75
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
     }
   },
   {
@@ -26404,6 +33004,306 @@
       "type": "put",
       "spot": 100,
       "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 100,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -27597,6 +34497,306 @@
       "n_d2": 0.3491930424628578,
       "prob_itm": 0.6508069575371422,
       "moneyness": 1.0
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 20,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 20,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 20,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 20,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 20,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 20,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 20,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 20,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 20,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 20,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 20,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.8333333333333334
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 100,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 20,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.8333333333333334
     }
   },
   {
@@ -28804,6 +36004,306 @@
       "type": "put",
       "spot": 110,
       "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 80,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -29997,6 +37497,306 @@
       "n_d2": 0.5042156100067828,
       "prob_itm": 0.49578438999321717,
       "moneyness": 1.375
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.1
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.1
     }
   },
   {
@@ -31204,6 +39004,306 @@
       "type": "put",
       "spot": 110,
       "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 10,
+      "delta": -1.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 1.0,
+      "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 110,
+      "strike": 120,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -32397,6 +40497,306 @@
       "n_d2": 0.30985400295822996,
       "prob_itm": 0.69014599704177,
       "moneyness": 0.9166666666666666
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.875
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 80,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.875
     }
   },
   {
@@ -33604,6 +42004,306 @@
       "type": "put",
       "spot": 150,
       "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 100,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 100,
       "days_to_expiration": 1,
       "volatility": 0.1,
       "risk_free_rate": 0.0,
@@ -34797,6 +43497,306 @@
       "n_d2": 0.5474935902988156,
       "prob_itm": 0.4525064097011844,
       "moneyness": 1.5
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.1,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.3,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.0,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.0
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
+    }
+  },
+  {
+    "input": {
+      "type": "put",
+      "spot": 150,
+      "strike": 120,
+      "days_to_expiration": 0,
+      "volatility": 0.8,
+      "risk_free_rate": 0.04,
+      "dividend_yield": 0.03
+    },
+    "expected": {
+      "price": 0.0,
+      "delta": 0.0,
+      "gamma": 0.0,
+      "theta": 0.0,
+      "vega": 0.0,
+      "rho": 0.0,
+      "d1": 0.0,
+      "d2": 0.0,
+      "n_d1": 0.0,
+      "n_d2": 0.0,
+      "prob_itm": 0.0,
+      "moneyness": 1.25
     }
   },
   {

@@ -59,7 +59,7 @@
       doc.getElementById("greeks-out").innerHTML = formatGreeks(r)
         .map((c) => `<div class="greek"><strong>${c.name}</strong> ${c.value}`
           + `<span class="meaning">${c.meaning}</span></div>`).join("");
-      if (root.Playground && root.Playground.drawSweep) root.Playground.drawSweep(doc, raw);
+      drawSweep(doc, raw);
     }
 
     ids.forEach((id) => doc.getElementById(id).addEventListener("input", update));

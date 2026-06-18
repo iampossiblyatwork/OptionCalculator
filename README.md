@@ -44,6 +44,13 @@ pip install pytest
 pytest                   # math + Flask API
 ```
 
+The JavaScript Black–Scholes twin and playground helpers have their own suite
+(Node's built-in test runner — no install needed):
+
+```bash
+node --test tests/*.test.js
+```
+
 ## Docker
 
 ```bash
@@ -76,8 +83,11 @@ their defaults — the Dockerfile lives at the repo root. Render provides
 
 ## Layout
 
-- `app.py` — Flask routes: the page (`/`), the calc API (`/api/calculate`), health (`/healthz`)
+- `app.py` — Flask routes: the page (`/`), the playground (`/playground`), the calc API (`/api/calculate`), health (`/healthz`)
 - `options.py` — pure trade-economics + Black–Scholes math (no dependencies)
 - `templates/index.html`, `static/` — the UI (vanilla JS, canvas payoff chart)
+- `static/bs.js` — pure JS Black–Scholes twin used by the playground (kept in parity with `options.py` via `tests/bs_parity.test.js`)
+- `static/playground.js` — playground slider wiring + sweep chart
+- `templates/playground.html` — the Learning Playground page
 - `test_options.py` — pytest suite for the math and the API
 - `Dockerfile`, `requirements.txt` — container + deps

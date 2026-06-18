@@ -14,6 +14,11 @@ const KEY = { price: "price", delta: "delta", gamma: "gamma", theta: "theta",
   prob_itm: "probItm", moneyness: "moneyness" };
 
 test("JS Black-Scholes matches Python across the grid", () => {
+  // Guard: KEY must mirror every key black_scholes() returns (catches drift).
+  const expectedKeys = Object.keys(grid[0].expected).sort();
+  assert.deepStrictEqual(Object.keys(KEY).sort(), expectedKeys,
+    "KEY map must mirror all keys returned by black_scholes()");
+
   for (const { input, expected } of grid) {
     const got = blackScholes({
       type: input.type, spot: input.spot, strike: input.strike,

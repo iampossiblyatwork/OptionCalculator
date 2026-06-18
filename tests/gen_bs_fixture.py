@@ -10,7 +10,7 @@ GRID = []
 for typ in ("call", "put"):
     for spot in (50, 90, 100, 110, 150):
         for strike in (80, 100, 120):
-            for days in (1, 30, 180, 365):
+            for days in (0, 1, 30, 180, 365):
                 for ivpct in (10, 30, 80):
                     for ratepct in (0, 4):
                         for divpct in (0, 3):
