@@ -7,7 +7,7 @@ const FIELD_LABELS = {
   premium: "Premium / share ($)",
   strike2: "Strike — short leg ($)",
   premium2: "Premium — short leg ($)",
-  costBasis: "Your cost basis / share ($)",
+  costBasis: "Your cost basis / share ($) — optional",
   currentPrice: "Current share price ($)",
 };
 
@@ -16,7 +16,7 @@ const DEFAULTS = {
   premium: 2.5,
   strike2: 120,
   premium2: 1,
-  costBasis: 100,
+  costBasis: "", // optional — leave blank to price the trade off today's price
   currentPrice: 105,
 };
 
@@ -41,7 +41,7 @@ function initStrategyMeta() {
 // instead we keep a small client copy keyed by id.
 Object.assign(BLURBS, {
   "covered-call":
-    "You own the shares and sell a call against them to collect premium. Capped upside at the strike; premium cushions a drop.",
+    "You own the shares and sell a call against them to collect premium. Capped upside at the strike; premium cushions a drop. Cost basis is optional — returns are measured against today's share price.",
   "cash-secured-put":
     "Sell a put and set aside cash to buy the shares if assigned. You collect premium; your effective buy price is the strike minus premium.",
   "long-call":
@@ -185,14 +185,20 @@ function render(d) {
   inc.innerHTML = "";
   if (d.incomeType === "coveredCall" && d.income) {
     const r = d.income;
-    inc.append(metric("If unchanged (premium)", fmtCurrency(r.max_profit_if_unchanged)));
+    inc.append(metric("Premium collected", fmtCurrency(r.premium_collected), "good"));
+    inc.append(metric("If unchanged", fmtCurrency(r.max_profit_if_unchanged)));
     inc.append(metric("If called away", fmtCurrency(r.max_profit_if_called), "good"));
-    inc.append(metric("Net cost basis", "$" + r.net_cost_basis.toFixed(2)));
     inc.append(metric("Static return", fmtPct(r.static_return)));
+    inc.append(metric("Static annualized", fmtPct(r.static_return_annualized)));
     inc.append(metric("Return if called", fmtPct(r.return_if_called), "good"));
     inc.append(metric("Annualized (called)", fmtPct(r.return_if_called_annualized)));
-    inc.append(metric("Static annualized", fmtPct(r.static_return_annualized)));
     inc.append(metric("Downside protection", fmtPct(r.downside_protection)));
+    // Cost basis is optional accounting detail — only shown when you supply it.
+    if (r.net_cost_basis !== undefined) {
+      inc.append(metric("Net cost basis", "$" + r.net_cost_basis.toFixed(2)));
+      inc.append(metric("Total gain if called", fmtCurrency(r.total_gain_if_called)));
+      inc.append(metric("Total return if called", fmtPct(r.total_return_if_called)));
+    }
   } else if (d.incomeType === "cashSecuredPut" && d.income) {
     const r = d.income;
     inc.append(metric("Cash to secure", fmtCurrency(r.cash_secured)));

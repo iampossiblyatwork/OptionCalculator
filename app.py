@@ -21,8 +21,9 @@ STRATEGIES = [
         "id": "covered-call",
         "label": "Covered call",
         "blurb": "You own the shares and sell a call against them to collect premium. "
-        "Capped upside at the strike; premium cushions a drop.",
-        "fields": ["costBasis", "currentPrice", "strike", "premium"],
+        "Capped upside at the strike; premium cushions a drop. Cost basis is "
+        "optional — returns are measured against today's share price.",
+        "fields": ["currentPrice", "strike", "premium", "costBasis"],
         "income": "coveredCall",
     },
     {
@@ -84,7 +85,7 @@ FIELD_LABELS = {
     "premium": "Premium / share ($)",
     "strike2": "Strike — short leg ($)",
     "premium2": "Premium — short leg ($)",
-    "costBasis": "Your cost basis / share ($)",
+    "costBasis": "Your cost basis / share ($) — optional",
     "currentPrice": "Current share price ($)",
 }
 
@@ -188,11 +189,15 @@ def calculate():
         premium = max(0.0, bs["price"]) if use_pricer else (manual[idx] if idx < len(manual) else 0.0)
         legs.append(opt.OptionLeg(ld["type"], ld["side"], ld["strike"], premium, ld["contracts"]))
 
+    # Cost basis is optional for a covered call: a blank/zero entry means "I don't
+    # care what I paid -- price the trade off today's share price."
+    cost_basis = inputs["costBasis"] if inputs["costBasis"] > 0 else None
+
     stock = None
     if strategy_id == "covered-call":
         stock = opt.StockLeg(
             shares=inputs["contracts"] * opt.SHARES_PER_CONTRACT,
-            cost_basis=inputs["costBasis"],
+            cost_basis=cost_basis if cost_basis is not None else inputs["currentPrice"],
         )
 
     position = opt.Position(legs=legs, stock=stock, multiplier=opt.SHARES_PER_CONTRACT)
@@ -203,11 +208,11 @@ def calculate():
     if strategy.get("income") == "coveredCall":
         income = opt.covered_call(
             shares=inputs["contracts"] * opt.SHARES_PER_CONTRACT,
-            cost_basis=inputs["costBasis"],
             current_price=inputs["currentPrice"],
             strike=inputs["strike"],
             premium=primary_premium,
             days_to_expiration=inputs["days"],
+            cost_basis=cost_basis,
         )
     elif strategy.get("income") == "cashSecuredPut":
         income = opt.cash_secured_put(

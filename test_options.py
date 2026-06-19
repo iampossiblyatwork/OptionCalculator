@@ -82,18 +82,38 @@ def test_summarize_bull_call_spread():
     assert s.breakevens[0] == pytest.approx(102.5)
 
 
-def test_covered_call_returns():
+def test_covered_call_returns_off_current_price():
+    # Returns are measured against today's share price, not cost basis.
     r = opt.covered_call(
-        shares=100, cost_basis=100, current_price=105, strike=110, premium=3,
+        shares=100, current_price=105, strike=110, premium=3,
         days_to_expiration=30,
     )
     assert r["premium_collected"] == pytest.approx(300)
-    assert r["breakeven"] == pytest.approx(97)
-    assert r["max_profit_if_called"] == pytest.approx(1300)
-    assert r["static_return"] == pytest.approx(0.03)
-    assert r["return_if_called"] == pytest.approx(0.13)
-    assert r["static_return_annualized"] == pytest.approx(0.03 * (365 / 30))
+    assert r["capital_at_risk"] == pytest.approx(10500)
+    assert r["breakeven"] == pytest.approx(102)  # current price - premium
+    assert r["max_profit_if_unchanged"] == pytest.approx(300)
+    assert r["max_profit_if_called"] == pytest.approx(800)  # (110-105+3)*100
+    assert r["static_return"] == pytest.approx(3 / 105)
+    assert r["return_if_called"] == pytest.approx((110 - 105 + 3) / 105)
+    assert r["static_return_annualized"] == pytest.approx((3 / 105) * (365 / 30))
     assert r["downside_protection"] == pytest.approx(3 / 105)
+    # No cost basis given -> no accounting-only metrics.
+    assert "net_cost_basis" not in r
+    assert "total_gain_if_called" not in r
+
+
+def test_covered_call_cost_basis_is_optional_extra():
+    # Supplying cost basis adds accounting metrics but leaves the current-price
+    # returns untouched.
+    r = opt.covered_call(
+        shares=100, current_price=105, strike=110, premium=3,
+        days_to_expiration=30, cost_basis=100,
+    )
+    assert r["static_return"] == pytest.approx(3 / 105)  # unchanged by cost basis
+    assert r["net_cost_basis"] == pytest.approx(97)
+    assert r["total_gain_if_called"] == pytest.approx(1300)  # (110-100+3)*100
+    assert r["total_return_if_called"] == pytest.approx(0.13)
+    assert r["total_return_if_called_annualized"] == pytest.approx(0.13 * (365 / 30))
 
 
 def test_cash_secured_put_returns():
@@ -193,8 +213,32 @@ def test_calculate_covered_call(client):
     assert d["breakevens"] == [97]
     assert d["maxProfit"] == pytest.approx(1300)
     assert d["incomeType"] == "coveredCall"
-    assert d["income"]["return_if_called"] == pytest.approx(0.13)
+    assert d["income"]["return_if_called"] == pytest.approx((110 - 105 + 3) / 105)
+    assert d["income"]["total_return_if_called"] == pytest.approx(0.13)  # cost basis given
     assert len(d["payoff"]) == 121
+
+
+def test_calculate_covered_call_without_cost_basis(client):
+    # Cost basis omitted: the trade still prices off the current share price and
+    # the breakeven / chart use today's price instead of a purchase price.
+    resp = client.post(
+        "/api/calculate",
+        json={
+            "strategy": "covered-call",
+            "contracts": 1,
+            "days": 30,
+            "currentPrice": 105,
+            "strike": 110,
+            "premium": 3,
+            "usePricer": False,
+        },
+    )
+    assert resp.status_code == 200
+    d = resp.get_json()
+    assert d["netPremium"] == pytest.approx(300)
+    assert d["breakevens"] == [102]  # current price - premium
+    assert d["income"]["static_return"] == pytest.approx(3 / 105)
+    assert "net_cost_basis" not in d["income"]
 
 
 def test_calculate_defaults_to_pricer(client):

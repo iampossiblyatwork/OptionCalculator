@@ -186,34 +186,59 @@ def _annualize(rate: float, days: float) -> float:
 def covered_call(
     *,
     shares: float,
-    cost_basis: float,
     current_price: float,
     strike: float,
     premium: float,
     days_to_expiration: float,
+    cost_basis: Optional[float] = None,
     multiplier: int = SHARES_PER_CONTRACT,
 ) -> dict:
+    """Covered-call economics, centered on the premium and the capital at work.
+
+    Returns are measured against the *current* share price -- the money actually
+    tied up in the trade today -- not your historical cost basis. Cost basis is
+    optional accounting detail: pass it and you also get your net cost basis and
+    the total gain/return including the share appreciation since you bought.
+    """
     contracts = shares / multiplier
     premium_collected = premium * shares
-    net_cost_basis = cost_basis - premium
-    capital_gain = (strike - cost_basis) * shares
-    static_return = premium / cost_basis if cost_basis else float("nan")
+    capital_at_risk = current_price * shares
+
+    # Everything the decision actually hinges on is relative to today's price.
+    static_return = premium / current_price if current_price else float("nan")
+    gain_if_called = (strike - current_price + premium) * shares
     return_if_called = (
-        (strike - cost_basis + premium) / cost_basis if cost_basis else float("nan")
+        (strike - current_price + premium) / current_price
+        if current_price
+        else float("nan")
     )
-    return {
+
+    result = {
         "contracts": contracts,
         "premium_collected": premium_collected,
-        "net_cost_basis": net_cost_basis,
-        "breakeven": net_cost_basis,
+        "capital_at_risk": capital_at_risk,
+        "breakeven": current_price - premium,
         "max_profit_if_unchanged": premium_collected,
-        "max_profit_if_called": capital_gain + premium_collected,
+        "max_profit_if_called": gain_if_called,
         "static_return": static_return,
         "return_if_called": return_if_called,
         "static_return_annualized": _annualize(static_return, days_to_expiration),
         "return_if_called_annualized": _annualize(return_if_called, days_to_expiration),
         "downside_protection": premium / current_price if current_price else float("nan"),
     }
+
+    # Cost basis is optional: it only changes your *accounting* gain (vs. what you
+    # actually paid), not the merits of selling the call today.
+    if cost_basis is not None and cost_basis > 0:
+        total_return_if_called = (strike - cost_basis + premium) / cost_basis
+        result["net_cost_basis"] = cost_basis - premium
+        result["total_gain_if_called"] = (strike - cost_basis + premium) * shares
+        result["total_return_if_called"] = total_return_if_called
+        result["total_return_if_called_annualized"] = _annualize(
+            total_return_if_called, days_to_expiration
+        )
+
+    return result
 
 
 def cash_secured_put(
