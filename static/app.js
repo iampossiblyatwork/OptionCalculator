@@ -88,6 +88,7 @@ function renderFields() {
       input.className = "num";
       input.type = "number";
       input.step = "any";
+      input.inputMode = "decimal";
       input.dataset.key = f;
       input.value = existing[f] ?? DEFAULTS[f] ?? "";
       input.addEventListener("input", calculate);
@@ -141,6 +142,12 @@ function metric(label, value, tone) {
   return cell;
 }
 
+function showError(msg) {
+  const el = $("calc-error");
+  el.textContent = msg;
+  el.hidden = !msg;
+}
+
 async function calculate() {
   let res;
   try {
@@ -150,9 +157,14 @@ async function calculate() {
       body: JSON.stringify(collectPayload()),
     });
   } catch (e) {
+    showError("Couldn't reach the server — check your connection and try again.");
     return;
   }
-  if (!res.ok) return;
+  if (!res.ok) {
+    showError("Check your inputs — that combination couldn't be priced.");
+    return;
+  }
+  showError("");
   const data = await res.json();
   render(data);
 }

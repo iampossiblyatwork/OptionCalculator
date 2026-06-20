@@ -18,19 +18,25 @@ const STOPS = [
   [1.0, [124, 246, 176]],
 ];
 
-function ramp(t) {
+function rampRgb(t) {
   t = Math.max(0, Math.min(1, t));
   for (let i = 1; i < STOPS.length; i++) {
     const [t0, c0] = STOPS[i - 1];
     const [t1, c1] = STOPS[i];
     if (t <= t1) {
       const f = (t - t0) / (t1 - t0 || 1);
-      const c = c0.map((v, k) => Math.round(v + (c1[k] - v) * f));
-      return `rgb(${c[0]}, ${c[1]}, ${c[2]})`;
+      return c0.map((v, k) => Math.round(v + (c1[k] - v) * f));
     }
   }
-  const last = STOPS[STOPS.length - 1][1];
-  return `rgb(${last[0]}, ${last[1]}, ${last[2]})`;
+  return STOPS[STOPS.length - 1][1];
+}
+
+// Dark text reads fine on the bright-green end of the ramp but disappears on
+// the near-black low end, so pick the label colour from the cell's own
+// luminance instead of hardcoding one in CSS.
+function textColorFor([r, g, b]) {
+  const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+  return luminance > 0.5 ? "#06121b" : "#eaf6ef";
 }
 
 const fmtPct = (v) => (Number.isFinite(v) ? (v * 100).toFixed(1) + "%" : "—");
@@ -60,6 +66,10 @@ async function load() {
       body: JSON.stringify(payload()),
     });
   } catch (e) {
+    heatmap.innerHTML = "";
+    detail.innerHTML =
+      '<div class="ss-detail-title">Couldn\'t reach the server</div>' +
+      '<p class="opt-note">Check your connection and try again.</p>';
     return;
   }
   if (!res.ok) {
@@ -113,7 +123,9 @@ function renderGrid(d) {
       const cell = document.createElement("button");
       cell.type = "button";
       cell.className = "ss-cell";
-      cell.style.background = ramp((c.risk_adjusted_score - min) / span);
+      const rgb = rampRgb((c.risk_adjusted_score - min) / span);
+      cell.style.background = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+      cell.style.color = textColorFor(rgb);
       cell.textContent = fmtPct0(c.risk_adjusted_score);
       cell.dataset.row = di;
       cell.dataset.col = si;

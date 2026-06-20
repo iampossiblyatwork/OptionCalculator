@@ -44,11 +44,11 @@
           <div class="opt-field-row">
             <label class="field inline">
               <span class="field-label">Contracts</span>
-              <input class="num" type="number" id="contracts" value="1" min="1" step="1" />
+              <input class="num" type="number" id="contracts" value="1" min="1" step="1" inputmode="numeric" />
             </label>
             <label class="field inline">
               <span class="field-label">Days to expiration</span>
-              <input class="num" type="number" id="days" value="27" min="0" step="1" />
+              <input class="num" type="number" id="days" value="27" min="0" step="1" inputmode="numeric" />
             </label>
           </div>
 
@@ -64,21 +64,21 @@
             <div class="opt-field-row">
               <label class="field inline">
                 <span class="field-label">Spot price ($)</span>
-                <input class="num" type="number" id="spot" value="261" step="any" />
+                <input class="num" type="number" id="spot" value="261" step="any" inputmode="decimal" />
               </label>
               <label class="field inline">
                 <span class="field-label">Implied vol (%)</span>
-                <input class="num" type="number" id="ivPct" value="78.88" step="any" />
+                <input class="num" type="number" id="ivPct" value="78.88" step="any" inputmode="decimal" />
               </label>
             </div>
             <div class="opt-field-row">
               <label class="field inline">
                 <span class="field-label">Risk-free rate (%)</span>
-                <input class="num" type="number" id="ratePct" value="4" step="any" />
+                <input class="num" type="number" id="ratePct" value="4" step="any" inputmode="decimal" />
               </label>
               <label class="field inline">
                 <span class="field-label">Dividend yield (%)</span>
-                <input class="num" type="number" id="divPct" value="0" step="any" />
+                <input class="num" type="number" id="divPct" value="0" step="any" inputmode="decimal" />
               </label>
             </div>
             <div id="estimates" class="opt-estimates"></div>
@@ -91,6 +91,7 @@
 
         <!-- Results -->
         <section class="opt-results">
+          <p id="calc-error" class="opt-error" hidden></p>
           <div class="opt-headline">
             <span class="opt-headline-label" id="headline-label">Net premium</span>
             <span class="opt-headline-value" id="headline-value">—</span>
