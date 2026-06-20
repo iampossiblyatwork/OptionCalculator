@@ -12,12 +12,12 @@ const FIELD_LABELS = {
 };
 
 const DEFAULTS = {
-  strike: 110,
-  premium: 2.5,
+  strike: 260,
+  premium: 22.7,
   strike2: 120,
   premium2: 1,
   costBasis: "", // optional — leave blank to price the trade off today's price
-  currentPrice: 105,
+  currentPrice: 261,
 };
 
 const BLURBS = {};
@@ -333,5 +333,6 @@ usePricer.addEventListener("change", () => {
 );
 window.addEventListener("resize", calculate);
 
+$("pricer").hidden = !usePricer.checked;
 renderFields();
 calculate();

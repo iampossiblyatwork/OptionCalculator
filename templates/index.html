@@ -18,9 +18,9 @@
     <main class="app-main">
       <p class="view-intro">
         Estimate what you collect or pay on an options trade, where it breaks
-        even, and the most you can make or lose. Premium defaults to a
-        Black–Scholes estimate — toggle it off if you have a market quote you'd
-        rather type in. One contract = {{ shares_per_contract }} shares.
+        even, and the most you can make or lose. Type in a market quote for the
+        premium, or toggle on the Black–Scholes estimate when you don't have one.
+        One contract = {{ shares_per_contract }} shares.
       </p>
 
       <div class="opt-grid">
@@ -45,7 +45,7 @@
             </label>
             <label class="field inline">
               <span class="field-label">Days to expiration</span>
-              <input class="num" type="number" id="days" value="30" min="0" step="1" />
+              <input class="num" type="number" id="days" value="27" min="0" step="1" />
             </label>
           </div>
 
@@ -53,7 +53,7 @@
           <div id="strategy-fields"></div>
 
           <label class="opt-toggle">
-            <input type="checkbox" id="usePricer" checked />
+            <input type="checkbox" id="usePricer" />
             <span>Estimate premium with Black–Scholes</span>
           </label>
 
@@ -61,11 +61,11 @@
             <div class="opt-field-row">
               <label class="field inline">
                 <span class="field-label">Spot price ($)</span>
-                <input class="num" type="number" id="spot" value="105" step="any" />
+                <input class="num" type="number" id="spot" value="261" step="any" />
               </label>
               <label class="field inline">
                 <span class="field-label">Implied vol (%)</span>
-                <input class="num" type="number" id="ivPct" value="30" step="any" />
+                <input class="num" type="number" id="ivPct" value="78.88" step="any" />
               </label>
             </div>
             <div class="opt-field-row">
