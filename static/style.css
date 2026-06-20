@@ -236,6 +236,8 @@ select,
 .opt-metric-value {
   font-weight: 700;
   font-size: 0.98rem;
+  overflow-wrap: anywhere;
+  font-variant-numeric: tabular-nums;
 }
 .opt-metric-value.good {
   color: var(--good);
