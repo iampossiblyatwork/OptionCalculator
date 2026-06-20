@@ -106,6 +106,22 @@
     ctx.stroke();
     ctx.fillStyle = "#8499a8"; ctx.font = "12px system-ui";
     ctx.fillText(`${metric} vs ${variable}`, pad, pad - 12);
+
+    // Numeric axis labels so the curve is readable, not just suggestive.
+    ctx.font = "11px system-ui";
+    const fmt = (n) => {
+      const a = Math.abs(n);
+      if (a !== 0 && a < 1) return n.toFixed(a < 0.1 ? 4 : 3);
+      if (a >= 1000) return (n / 1000).toFixed(1) + "k";
+      return n.toFixed(a < 100 ? 1 : 0);
+    };
+    ctx.textBaseline = "top"; ctx.textAlign = "left";
+    ctx.fillText(fmt(xMin), pad, H - pad + 5);
+    ctx.textAlign = "right";
+    ctx.fillText(fmt(xMax), W - pad, H - pad + 5);
+    ctx.textBaseline = "middle";
+    ctx.fillText(fmt(yMax), pad - 5, pad);
+    ctx.fillText(fmt(yMin), pad - 5, H - pad);
   }
 
   if (typeof document !== "undefined") {

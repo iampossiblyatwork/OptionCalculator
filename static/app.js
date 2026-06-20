@@ -88,6 +88,7 @@ function renderFields() {
       input.className = "num";
       input.type = "number";
       input.step = "any";
+      input.min = "0"; // strikes, premiums and prices are never negative
       input.inputMode = "decimal";
       input.dataset.key = f;
       input.value = existing[f] ?? DEFAULTS[f] ?? "";

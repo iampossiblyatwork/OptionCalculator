@@ -64,21 +64,21 @@
             <div class="opt-field-row">
               <label class="field inline">
                 <span class="field-label">Spot price ($)</span>
-                <input class="num" type="number" id="spot" value="261" step="any" inputmode="decimal" />
+                <input class="num" type="number" id="spot" min="0" value="261" step="any" inputmode="decimal" />
               </label>
               <label class="field inline">
                 <span class="field-label">Implied vol (%)</span>
-                <input class="num" type="number" id="ivPct" value="78.88" step="any" inputmode="decimal" />
+                <input class="num" type="number" id="ivPct" min="0" value="78.88" step="any" inputmode="decimal" />
               </label>
             </div>
             <div class="opt-field-row">
               <label class="field inline">
                 <span class="field-label">Risk-free rate (%)</span>
-                <input class="num" type="number" id="ratePct" value="4" step="any" inputmode="decimal" />
+                <input class="num" type="number" id="ratePct" min="0" value="4" step="any" inputmode="decimal" />
               </label>
               <label class="field inline">
                 <span class="field-label">Dividend yield (%)</span>
-                <input class="num" type="number" id="divPct" value="0" step="any" inputmode="decimal" />
+                <input class="num" type="number" id="divPct" min="0" value="0" step="any" inputmode="decimal" />
               </label>
             </div>
             <div id="estimates" class="opt-estimates"></div>
