@@ -236,7 +236,10 @@ function render(d) {
   drawPayoff(d);
 }
 
-function drawPayoff(d) {
+let lastPayoffData = null;
+
+function drawPayoff(d, hoverX = null) {
+  lastPayoffData = d;
   const canvas = $("payoff");
   const ctx = canvas.getContext("2d");
   const dpr = window.devicePixelRatio || 1;
@@ -261,23 +264,36 @@ function drawPayoff(d) {
   yMin -= pad;
   yMax += pad;
 
-  const padL = 8,
-    padR = 8,
-    padT = 10,
+  // Left gutter holds the P/L dollar labels so the chart is readable on both
+  // axes, not just price.
+  const padL = 52,
+    padR = 10,
+    padT = 12,
     padB = 22;
   const plotW = cssW - padL - padR;
   const plotH = cssH - padT - padB;
   const xFor = (price) => padL + ((price - lo) / (hi - lo)) * plotW;
   const yFor = (pnl) => padT + (1 - (pnl - yMin) / (yMax - yMin)) * plotH;
 
-  // Zero line
+  // Y-axis P/L gridlines + labels (top = best case, bottom = worst case, 0).
+  const yTicks = [yMax, (yMax + 0) / 2, 0, (yMin + 0) / 2, yMin].filter(
+    (v, i, a) => a.indexOf(v) === i,
+  );
+  ctx.font = "10px system-ui, sans-serif";
+  ctx.textBaseline = "middle";
+  ctx.textAlign = "right";
+  yTicks.forEach((v) => {
+    const y = yFor(v);
+    ctx.strokeStyle = v === 0 ? "#243140" : "#161f2a";
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(padL, y);
+    ctx.lineTo(cssW - padR, y);
+    ctx.stroke();
+    ctx.fillStyle = v > 0 ? "#5fd0a0" : v < 0 ? "#ff8a8a" : "#8499a8";
+    ctx.fillText(fmtCompact(v), padL - 6, y);
+  });
   const y0 = yFor(0);
-  ctx.strokeStyle = "#243140";
-  ctx.lineWidth = 1;
-  ctx.beginPath();
-  ctx.moveTo(padL, y0);
-  ctx.lineTo(cssW - padR, y0);
-  ctx.stroke();
 
   // Strike markers
   ctx.strokeStyle = "#1c2733";
@@ -317,7 +333,25 @@ function drawPayoff(d) {
   });
   ctx.stroke();
 
-  // Axis labels
+  // Breakeven markers: where the trade crosses $0, the prices that actually
+  // matter. Drawn on top of the curve with a dot + price label.
+  (d.breakevens || []).forEach((b) => {
+    if (b < lo || b > hi) return;
+    const x = xFor(b);
+    ctx.strokeStyle = "rgba(255, 209, 102, 0.7)";
+    ctx.setLineDash([2, 2]);
+    ctx.beginPath();
+    ctx.moveTo(x, padT);
+    ctx.lineTo(x, cssH - padB);
+    ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = "#ffd166";
+    ctx.beginPath();
+    ctx.arc(x, y0, 3, 0, Math.PI * 2);
+    ctx.fill();
+  });
+
+  // X-axis labels
   ctx.fillStyle = "#8499a8";
   ctx.font = "11px system-ui, sans-serif";
   ctx.textBaseline = "top";
@@ -327,6 +361,68 @@ function drawPayoff(d) {
   ctx.fillText("$" + hi.toFixed(0), cssW - padR, cssH - padB + 5);
   ctx.textAlign = "center";
   d.strikes.forEach((k) => ctx.fillText(String(k), xFor(k), cssH - padB + 5));
+
+  // Hover crosshair: read the exact P/L at any underlying price.
+  if (hoverX !== null) {
+    const cx = Math.max(padL, Math.min(cssW - padR, hoverX));
+    const price = lo + ((cx - padL) / plotW) * (hi - lo);
+    const pnl = interpPnl(pts, price);
+    const cy = yFor(pnl);
+
+    ctx.strokeStyle = "rgba(132, 153, 168, 0.5)";
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(cx, padT);
+    ctx.lineTo(cx, cssH - padB);
+    ctx.stroke();
+
+    ctx.fillStyle = pnl >= 0 ? "#5fd0a0" : "#ff8a8a";
+    ctx.beginPath();
+    ctx.arc(cx, cy, 3.5, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Tooltip box, flipped to whichever side has room.
+    const label = "$" + price.toFixed(2) + "  •  " + fmtCompact(pnl);
+    ctx.font = "11px system-ui, sans-serif";
+    const tw = ctx.measureText(label).width + 12;
+    const th = 18;
+    let bx = cx + 8;
+    if (bx + tw > cssW - padR) bx = cx - 8 - tw;
+    const by = padT + 2;
+    ctx.fillStyle = "rgba(12, 18, 25, 0.92)";
+    ctx.strokeStyle = "#243140";
+    ctx.beginPath();
+    ctx.rect(bx, by, tw, th);
+    ctx.fill();
+    ctx.stroke();
+    ctx.fillStyle = "#e8eef4";
+    ctx.textAlign = "left";
+    ctx.textBaseline = "middle";
+    ctx.fillText(label, bx + 6, by + th / 2);
+  }
+}
+
+// Linear-interpolate the payoff curve's P/L at an arbitrary price.
+function interpPnl(pts, price) {
+  if (price <= pts[0].price) return pts[0].pnl;
+  if (price >= pts[pts.length - 1].price) return pts[pts.length - 1].pnl;
+  for (let i = 1; i < pts.length; i++) {
+    if (price <= pts[i].price) {
+      const a = pts[i - 1];
+      const b = pts[i];
+      const t = (price - a.price) / (b.price - a.price || 1);
+      return a.pnl + t * (b.pnl - a.pnl);
+    }
+  }
+  return pts[pts.length - 1].pnl;
+}
+
+// Compact dollar formatting for axis ticks: $1.2k, -$450, $0.
+function fmtCompact(v) {
+  const sign = v < 0 ? "-" : "";
+  const a = Math.abs(v);
+  if (a >= 1000) return sign + "$" + (a / 1000).toFixed(a >= 10000 ? 0 : 1) + "k";
+  return sign + "$" + Math.round(a);
 }
 
 // Wire up
@@ -344,6 +440,27 @@ usePricer.addEventListener("change", () => {
   $(id).addEventListener("input", calculate),
 );
 window.addEventListener("resize", calculate);
+
+// Hover/touch the payoff chart to read the exact P/L at any price.
+(function wirePayoffHover() {
+  const canvas = $("payoff");
+  const at = (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    return clientX - rect.left;
+  };
+  const move = (e) => {
+    if (!lastPayoffData) return;
+    if (e.cancelable && e.touches) e.preventDefault();
+    drawPayoff(lastPayoffData, at(e));
+  };
+  const clear = () => lastPayoffData && drawPayoff(lastPayoffData, null);
+  canvas.addEventListener("mousemove", move);
+  canvas.addEventListener("mouseleave", clear);
+  canvas.addEventListener("touchstart", move, { passive: false });
+  canvas.addEventListener("touchmove", move, { passive: false });
+  canvas.addEventListener("touchend", clear);
+})();
 
 $("pricer").hidden = !usePricer.checked;
 renderFields();
