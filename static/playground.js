@@ -98,13 +98,13 @@
     const yMin = Math.min(...ys), yMax = Math.max(...ys);
     const sx = (x) => pad + (W - 2 * pad) * (x - xMin) / (xMax - xMin || 1);
     const sy = (y) => H - pad - (H - 2 * pad) * (y - yMin) / (yMax - yMin || 1);
-    ctx.strokeStyle = "#888"; ctx.beginPath();
+    ctx.strokeStyle = "#3a4a5a"; ctx.beginPath();
     ctx.moveTo(pad, H - pad); ctx.lineTo(W - pad, H - pad);
     ctx.moveTo(pad, pad); ctx.lineTo(pad, H - pad); ctx.stroke();
-    ctx.strokeStyle = "#2b8a3e"; ctx.lineWidth = 2; ctx.beginPath();
+    ctx.strokeStyle = "#5fd0a0"; ctx.lineWidth = 2; ctx.beginPath();
     pts.forEach((p, i) => (i ? ctx.lineTo(sx(p.x), sy(p.y)) : ctx.moveTo(sx(p.x), sy(p.y))));
     ctx.stroke();
-    ctx.fillStyle = "#444"; ctx.font = "12px system-ui";
+    ctx.fillStyle = "#8499a8"; ctx.font = "12px system-ui";
     ctx.fillText(`${metric} vs ${variable}`, pad, pad - 12);
   }
 
