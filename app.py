@@ -11,6 +11,25 @@ from flask import Flask, jsonify, render_template, request
 
 import options as opt
 
+# Sweet-spot grid axes: strikes span just below today's price out to comfortably
+# OTM (where covered calls usually live), and a spread of standard expirations.
+SWEET_SPOT_STRIKE_LO = 0.95
+SWEET_SPOT_STRIKE_HI = 1.20
+SWEET_SPOT_STRIKE_COUNT = 12
+SWEET_SPOT_DAYS = [7, 14, 21, 30, 45, 60, 90, 120]
+
+
+def _sweet_spot_strikes(spot: float) -> list[float]:
+    """Evenly spaced strikes around the spot, rounded to whole dollars."""
+    if spot <= 0:
+        return []
+    lo, hi = spot * SWEET_SPOT_STRIKE_LO, spot * SWEET_SPOT_STRIKE_HI
+    n = SWEET_SPOT_STRIKE_COUNT
+    strikes = [round(lo + (hi - lo) * i / (n - 1)) for i in range(n)]
+    # Drop any collisions from rounding while preserving order.
+    seen: set[float] = set()
+    return [s for s in strikes if not (s in seen or seen.add(s))]
+
 app = Flask(__name__)
 
 # Each strategy declares which input fields it needs and how to assemble a
@@ -137,6 +156,34 @@ def index():
 @app.get("/playground")
 def playground():
     return render_template("playground.html")
+
+
+@app.get("/sweet-spot")
+def sweet_spot():
+    return render_template("sweetspot.html")
+
+
+@app.post("/api/sweet-spot")
+def api_sweet_spot():
+    data = request.get_json(silent=True) or {}
+    spot = max(0.0, _num(data, "spot", 261))
+    volatility = max(0.0, _num(data, "ivPct", 78.88)) / 100.0
+    rate = _num(data, "ratePct", 4) / 100.0
+    div = _num(data, "divPct", 0) / 100.0
+
+    strikes = _sweet_spot_strikes(spot)
+    if not strikes or volatility <= 0:
+        return jsonify(error="Need a positive spot price and implied volatility"), 400
+
+    result = opt.covered_call_sweet_spot(
+        spot=spot,
+        volatility=volatility,
+        strikes=strikes,
+        days_list=SWEET_SPOT_DAYS,
+        risk_free_rate=rate,
+        dividend_yield=div,
+    )
+    return jsonify(result)
 
 
 @app.get("/healthz")

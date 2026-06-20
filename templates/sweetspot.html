@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covered-Call ROI Sweet Spot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="app-title">
+        <span class="app-title-main">Covered-Call Sweet Spot</span>
+        <span class="app-title-sub">Strike × expiration, ranked by risk-adjusted yield</span>
+      </div>
+      <nav class="app-nav">
+        <a href="/">← Calculator</a>
+        <a href="/playground">Learning playground →</a>
+      </nav>
+    </header>
+
+    <main class="app-main">
+      <p class="view-intro">
+        Every cell is a covered call: a strike (across the top) and an expiration
+        (down the side). Brighter green = a better <strong>risk-adjusted
+        yield</strong> — the annualized premium return scaled by the chance the
+        call expires worthless and you keep your shares. The ringed cell is the
+        sweet spot. Premiums are Black–Scholes estimates from the inputs below.
+      </p>
+
+      <form id="ss-form" class="ss-controls">
+        <label class="field inline">
+          <span class="field-label">Spot price ($)</span>
+          <input class="num" type="number" id="spot" value="261" step="any" />
+        </label>
+        <label class="field inline">
+          <span class="field-label">Implied vol (%)</span>
+          <input class="num" type="number" id="ivPct" value="78.88" step="any" />
+        </label>
+        <label class="field inline">
+          <span class="field-label">Risk-free (%)</span>
+          <input class="num" type="number" id="ratePct" value="4" step="any" />
+        </label>
+        <label class="field inline">
+          <span class="field-label">Dividend (%)</span>
+          <input class="num" type="number" id="divPct" value="0" step="any" />
+        </label>
+      </form>
+
+      <div class="ss-layout">
+        <section class="ss-heatmap-wrap">
+          <div class="ss-axis-title ss-axis-x">Strike →</div>
+          <div class="ss-heatmap-scroll">
+            <div id="ss-heatmap" class="ss-heatmap"></div>
+          </div>
+          <div class="ss-legend">
+            <span>Lower yield</span>
+            <span class="ss-legend-bar"></span>
+            <span>Higher yield</span>
+          </div>
+        </section>
+
+        <aside id="ss-detail" class="ss-detail">
+          <div class="ss-detail-title">Tap a cell</div>
+        </aside>
+      </div>
+    </main>
+
+    <script src="{{ url_for('static', filename='sweetspot.js') }}"></script>
+  </body>
+</html>

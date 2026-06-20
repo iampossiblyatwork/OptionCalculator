@@ -125,6 +125,41 @@ def test_cash_secured_put_returns():
     assert r["return_on_cash_annualized"] == pytest.approx((1.25 / 50) * (365 / 45))
 
 
+def test_covered_call_sweet_spot_grid_shape_and_scoring():
+    strikes = [100, 105, 110]
+    days_list = [30, 60]
+    r = opt.covered_call_sweet_spot(
+        spot=100, volatility=0.3, strikes=strikes, days_list=days_list,
+    )
+    assert len(r["grid"]) == 2  # one row per expiration
+    assert all(len(row) == 3 for row in r["grid"])  # one cell per strike
+
+    # Every cell's score is annualized yield * probability of keeping the shares,
+    # and prob_keep + prob_assigned == 1.
+    for row in r["grid"]:
+        for c in row:
+            assert c["prob_keep_shares"] + c["prob_assigned"] == pytest.approx(1.0)
+            assert c["risk_adjusted_score"] == pytest.approx(
+                c["annualized_yield"] * c["prob_keep_shares"]
+            )
+
+    # The reported best cell really is the grid-wide maximum score.
+    flat = [c for row in r["grid"] for c in row]
+    top = max(flat, key=lambda c: c["risk_adjusted_score"])
+    best = r["grid"][r["best"]["row"]][r["best"]["col"]]
+    assert best["risk_adjusted_score"] == pytest.approx(top["risk_adjusted_score"])
+
+
+def test_covered_call_sweet_spot_skips_thin_far_otm():
+    # The deep-OTM strike pays a thin premium, so it should never be the
+    # risk-adjusted winner even though it's the most likely to expire worthless.
+    strikes = [100, 105, 110, 115, 120, 125]
+    r = opt.covered_call_sweet_spot(
+        spot=100, volatility=0.4, strikes=strikes, days_list=[45],
+    )
+    assert r["best"]["col"] < len(strikes) - 1
+
+
 def test_norm_cdf():
     assert opt.norm_cdf(0) == pytest.approx(0.5, abs=1e-4)
     assert opt.norm_cdf(1.96) == pytest.approx(0.975, abs=1e-3)
@@ -276,6 +311,33 @@ def test_calculate_with_pricer(client):
 
 def test_calculate_unknown_strategy(client):
     resp = client.post("/api/calculate", json={"strategy": "nope"})
+    assert resp.status_code == 400
+
+
+def test_sweet_spot_page_serves_html(client):
+    resp = client.get("/sweet-spot")
+    assert resp.status_code == 200
+    assert b"sweetspot.js" in resp.data
+    assert b"Sweet Spot" in resp.data
+
+
+def test_api_sweet_spot_returns_grid(client):
+    resp = client.post(
+        "/api/sweet-spot",
+        json={"spot": 261, "ivPct": 78.88, "ratePct": 4, "divPct": 0},
+    )
+    assert resp.status_code == 200
+    d = resp.get_json()
+    assert len(d["strikes"]) >= 8
+    assert len(d["days"]) == len(d["grid"])
+    assert len(d["grid"][0]) == len(d["strikes"])
+    # best indices point at a real cell
+    assert 0 <= d["best"]["row"] < len(d["grid"])
+    assert 0 <= d["best"]["col"] < len(d["strikes"])
+
+
+def test_api_sweet_spot_rejects_bad_inputs(client):
+    resp = client.post("/api/sweet-spot", json={"spot": 0, "ivPct": 30})
     assert resp.status_code == 400
 
 

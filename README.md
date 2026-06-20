@@ -15,6 +15,17 @@ Covered call · cash-secured put · long call · long put · short (naked) call 
 short (naked) put · bull call spread · bear put spread. One contract = 100
 shares.
 
+## Covered-Call Sweet Spot
+
+Visit `/sweet-spot` for a strike × expiration heatmap that ranks covered calls by
+**risk-adjusted yield** — the annualized premium yield scaled by the probability
+the call expires worthless (you keep both the premium and your shares). Every
+cell is one covered call; brighter green is a better score and the ringed cell is
+the sweet spot. Tap any cell for the full breakdown (premium, annualized yield,
+odds of keeping the shares, return if called, delta). Premiums are priced from
+Black–Scholes off the spot/IV/rate/dividend inputs, and the grid is shaped so
+live option-chain quotes can later drop straight in.
+
 ## Learning Playground
 
 Visit `/playground` for an interactive Black–Scholes sandbox: drag sliders for

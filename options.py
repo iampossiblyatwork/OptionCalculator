@@ -357,3 +357,89 @@ def black_scholes(
         "prob_itm": prob_itm,
         "moneyness": S / K,
     }
+
+
+# ---------------------------------------------------------------------------
+# Covered-call ROI sweet-spot grid (strike x expiration)
+# ---------------------------------------------------------------------------
+
+
+def covered_call_sweet_spot(
+    *,
+    spot: float,
+    volatility: float,
+    strikes: list[float],
+    days_list: list[float],
+    risk_free_rate: float = 0.04,
+    dividend_yield: float = 0.0,
+) -> dict:
+    """Score a grid of covered calls by risk-adjusted annualized yield.
+
+    For every (strike, days-to-expiration) pair the call is priced with
+    Black-Scholes and scored as
+
+        annualized premium yield  x  probability it expires worthless
+
+    The premium yield is the call premium over today's share price; the
+    probability of expiring worthless -- i.e. finishing below the strike, so you
+    keep both the premium and your shares -- is N(-d2) = 1 - prob_itm. Their
+    product rewards strikes that pay real income *and* are likely to leave the
+    shares un-called -- the "sweet spot." Fatter premiums sit near (or in) the
+    money where assignment is likely, while far-OTM strikes are safe but pay
+    thin; the best score balances the two. Exactly where it lands depends on the
+    inputs and the strike range, so it is found by scanning, not assumed.
+
+    Returns the full grid (rows indexed by days, columns by strike) plus the
+    row/column of the highest-scoring cell. Live option-chain quotes can later
+    replace the Black-Scholes premium without changing the shape of this output.
+    """
+    grid: list[list[dict]] = []
+    best_row, best_col = 0, 0
+    best_score = float("-inf")
+
+    for di, days in enumerate(days_list):
+        row: list[dict] = []
+        for si, strike in enumerate(strikes):
+            bs = black_scholes(
+                type="call",
+                spot=spot,
+                strike=strike,
+                days_to_expiration=days,
+                volatility=volatility,
+                risk_free_rate=risk_free_rate,
+                dividend_yield=dividend_yield,
+            )
+            premium = max(0.0, bs["price"])
+            prob_assigned = bs["prob_itm"]  # finishes above the strike
+            prob_keep = 1.0 - prob_assigned  # expires worthless, shares kept
+            static_yield = premium / spot if spot else 0.0
+            annualized_yield = _annualize(static_yield, days)
+            score = annualized_yield * prob_keep
+            return_if_called = (strike - spot + premium) / spot if spot else 0.0
+
+            row.append(
+                {
+                    "strike": strike,
+                    "days": days,
+                    "premium": premium,
+                    "static_yield": static_yield,
+                    "annualized_yield": annualized_yield,
+                    "prob_keep_shares": prob_keep,
+                    "prob_assigned": prob_assigned,
+                    "return_if_called_annualized": _annualize(return_if_called, days),
+                    "delta": bs["delta"],
+                    "risk_adjusted_score": score,
+                }
+            )
+            if score > best_score:
+                best_score = score
+                best_row, best_col = di, si
+        grid.append(row)
+
+    return {
+        "spot": spot,
+        "strikes": list(strikes),
+        "days": list(days_list),
+        "grid": grid,
+        "best": {"row": best_row, "col": best_col, "score": best_score},
+    }
