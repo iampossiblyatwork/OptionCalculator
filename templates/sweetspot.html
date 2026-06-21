@@ -29,6 +29,10 @@
 
       <form id="ss-form" class="ss-controls">
         <label class="field inline">
+          <span class="field-label">Ticker (optional — live strikes)</span>
+          <input class="num" type="text" id="ticker" placeholder="e.g. AAPL" autocomplete="off" autocapitalize="characters" />
+        </label>
+        <label class="field inline">
           <span class="field-label">Spot price ($)</span>
           <input class="num" type="number" id="spot" min="0" value="261" step="any" inputmode="decimal" />
         </label>
@@ -45,6 +49,7 @@
           <input class="num" type="number" id="divPct" min="0" value="0" step="any" inputmode="decimal" />
         </label>
       </form>
+      <p id="ss-source" class="opt-note" hidden></p>
 
       <div class="ss-layout">
         <section class="ss-heatmap-wrap">

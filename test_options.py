@@ -4,6 +4,8 @@ import math
 
 import pytest
 
+import app as appmod
+import marketdata as md
 import options as opt
 from app import app
 
@@ -339,6 +341,54 @@ def test_api_sweet_spot_returns_grid(client):
 def test_api_sweet_spot_rejects_bad_inputs(client):
     resp = client.post("/api/sweet-spot", json={"spot": 0, "ivPct": 30})
     assert resp.status_code == 400
+
+
+def test_api_sweet_spot_with_ticker_uses_live_data(client, monkeypatch):
+    contracts = [
+        {"ticker": "O:AAPL250117C00250000", "strike_price": 250,
+         "expiration_date": "2099-01-17", "contract_type": "call"},
+        {"ticker": "O:AAPL250117C00260000", "strike_price": 260,
+         "expiration_date": "2099-01-17", "contract_type": "call"},
+        {"ticker": "O:AAPL250214C00255000", "strike_price": 255,
+         "expiration_date": "2099-02-14", "contract_type": "call"},
+    ]
+    monkeypatch.setattr(
+        appmod.md, "get_option_contracts", lambda *a, **k: contracts
+    )
+    resp = client.post(
+        "/api/sweet-spot",
+        json={"ticker": "aapl", "spot": 261, "ivPct": 78.88, "ratePct": 4, "divPct": 0},
+    )
+    assert resp.status_code == 200
+    d = resp.get_json()
+    assert d["dataSource"] == "live"
+    assert d["ticker"] == "AAPL"
+    assert d["strikes"] == [250, 255, 260]
+    assert len(d["grid"][0]) == len(d["strikes"])
+
+
+def test_api_sweet_spot_without_ticker_stays_synthetic(client):
+    resp = client.post(
+        "/api/sweet-spot",
+        json={"spot": 261, "ivPct": 78.88, "ratePct": 4, "divPct": 0},
+    )
+    assert resp.status_code == 200
+    d = resp.get_json()
+    assert d["dataSource"] == "synthetic"
+    assert d["ticker"] is None
+
+
+def test_api_sweet_spot_with_ticker_market_data_error(client, monkeypatch):
+    def boom(*a, **k):
+        raise md.MarketDataError("MASSIVE_API_KEY is not set")
+
+    monkeypatch.setattr(appmod.md, "get_option_contracts", boom)
+    resp = client.post(
+        "/api/sweet-spot",
+        json={"ticker": "AAPL", "spot": 261, "ivPct": 78.88},
+    )
+    assert resp.status_code == 502
+    assert "AAPL" in resp.get_json()["error"]
 
 
 def test_black_scholes_teaching_outputs():

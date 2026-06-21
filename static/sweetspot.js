@@ -50,11 +50,19 @@ let current = null; // last grid response
 
 function payload() {
   return {
+    ticker: $("ticker").value,
     spot: $("spot").value,
     ivPct: $("ivPct").value,
     ratePct: $("ratePct").value,
     divPct: $("divPct").value,
   };
+}
+
+function setSourceNote(text) {
+  const el = $("ss-source");
+  if (!el) return;
+  el.hidden = !text;
+  el.textContent = text || "";
 }
 
 async function load() {
@@ -70,16 +78,24 @@ async function load() {
     detail.innerHTML =
       '<div class="ss-detail-title">Couldn\'t reach the server</div>' +
       '<p class="opt-note">Check your connection and try again.</p>';
+    setSourceNote("");
     return;
   }
   if (!res.ok) {
+    const body = await res.json().catch(() => ({}));
     heatmap.innerHTML = "";
     detail.innerHTML = '<div class="ss-detail-title">Check your inputs</div>';
+    setSourceNote(body.error || "Couldn't load the grid — check your inputs.");
     return;
   }
   current = await res.json();
   renderGrid(current);
   selectCell(current.best.row, current.best.col);
+  setSourceNote(
+    current.dataSource === "live"
+      ? `Live strikes & expirations for ${current.ticker}, from Massive.`
+      : "Synthetic strike/expiration grid — enter a ticker above for live listed contracts.",
+  );
 }
 
 function renderGrid(d) {
@@ -189,7 +205,7 @@ function selectCell(row, col) {
   detail.append(note);
 }
 
-["spot", "ivPct", "ratePct", "divPct"].forEach((id) =>
+["ticker", "spot", "ivPct", "ratePct", "divPct"].forEach((id) =>
   $(id).addEventListener("input", load),
 );
 

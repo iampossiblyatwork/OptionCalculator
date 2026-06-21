@@ -7,8 +7,11 @@ it runs under gunicorn and binds to the port Render provides via $PORT.
 
 from __future__ import annotations
 
+from datetime import date
+
 from flask import Flask, jsonify, render_template, request
 
+import marketdata as md
 import options as opt
 
 # Sweet-spot grid axes: strikes span just below today's price out to comfortably
@@ -29,6 +32,34 @@ def _sweet_spot_strikes(spot: float) -> list[float]:
     # Drop any collisions from rounding while preserving order.
     seen: set[float] = set()
     return [s for s in strikes if not (s in seen or seen.add(s))]
+
+def _live_strikes_and_days(ticker: str, spot: float) -> tuple[list[float], list[float]]:
+    """Real listed call strikes/expirations for a ticker, shaped like the
+    synthetic sweet-spot grid: near-the-money strikes, a handful of upcoming
+    expirations (in days). Raises MarketDataError if the API call fails.
+    """
+    contracts = md.get_option_contracts(ticker, contract_type="call", expired=False)
+    if not contracts:
+        raise md.MarketDataError(f"No listed call contracts found for {ticker}")
+
+    lo, hi = spot * SWEET_SPOT_STRIKE_LO, spot * SWEET_SPOT_STRIKE_HI
+    strikes = sorted({c["strike_price"] for c in contracts if lo <= c["strike_price"] <= hi})
+    if len(strikes) > SWEET_SPOT_STRIKE_COUNT:
+        n = SWEET_SPOT_STRIKE_COUNT
+        idx = sorted({round(i * (len(strikes) - 1) / (n - 1)) for i in range(n)})
+        strikes = [strikes[i] for i in idx]
+
+    today = date.today()
+    days_list = sorted(
+        {
+            (date.fromisoformat(c["expiration_date"]) - today).days
+            for c in contracts
+            if date.fromisoformat(c["expiration_date"]) > today
+        }
+    )[: len(SWEET_SPOT_DAYS)]
+
+    return strikes, [float(d) for d in days_list]
+
 
 app = Flask(__name__)
 
@@ -170,8 +201,24 @@ def api_sweet_spot():
     volatility = max(0.0, _num(data, "ivPct", 78.88)) / 100.0
     rate = _num(data, "ratePct", 4) / 100.0
     div = _num(data, "divPct", 0) / 100.0
+    ticker = (data.get("ticker") or "").strip().upper()
 
-    strikes = _sweet_spot_strikes(spot)
+    data_source = "synthetic"
+    if ticker:
+        try:
+            strikes, days_list = _live_strikes_and_days(ticker, spot)
+            data_source = "live"
+        except md.MarketDataError as e:
+            return jsonify(error=f"{ticker}: {e}"), 502
+        if not strikes or not days_list:
+            return (
+                jsonify(error=f"No near-the-money call contracts found for {ticker}"),
+                400,
+            )
+    else:
+        strikes = _sweet_spot_strikes(spot)
+        days_list = SWEET_SPOT_DAYS
+
     if not strikes or volatility <= 0:
         return jsonify(error="Need a positive spot price and implied volatility"), 400
 
@@ -179,10 +226,12 @@ def api_sweet_spot():
         spot=spot,
         volatility=volatility,
         strikes=strikes,
-        days_list=SWEET_SPOT_DAYS,
+        days_list=days_list,
         risk_free_rate=rate,
         dividend_yield=div,
     )
+    result["ticker"] = ticker or None
+    result["dataSource"] = data_source
     return jsonify(result)
 
 
