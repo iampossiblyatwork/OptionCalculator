@@ -107,10 +107,27 @@
             </div>
             <canvas id="payoff" class="opt-chart-canvas"></canvas>
           </div>
+
+          <div class="opt-chart">
+            <div class="opt-chart-title">
+              P/L surface — price × days to expiry
+              <span class="opt-chart-hint">— drag to rotate</span>
+            </div>
+            <canvas id="surface" class="opt-surface-canvas"></canvas>
+            <p class="opt-note">
+              The whole P/L landscape before expiration, priced with
+              Black–Scholes. The blue front edge (0 days left) is the
+              at-expiration curve above; the surface behind it is time value
+              decaying. Green is profit, red is loss, measured against the grey
+              breakeven plane.
+            </p>
+          </div>
         </section>
       </div>
     </main>
 
+    <script src="{{ url_for('static', filename='bs.js') }}"></script>
+    <script src="{{ url_for('static', filename='surface.js') }}"></script>
     <script src="{{ url_for('static', filename='app.js') }}"></script>
   </body>
 </html>

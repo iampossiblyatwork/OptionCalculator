@@ -235,6 +235,41 @@ function render(d) {
   }
 
   drawPayoff(d);
+  updateSurface(d);
+}
+
+// Feed the current position into the 3D P/L surface. Everything it needs to
+// value the legs before expiration lives in the response plus the pricer
+// inputs, so the surface is computed client-side from the same position.
+function updateSurface(d) {
+  if (!window.Surface || !d.legs || !d.legs.length) return;
+  const contracts = Number($("contracts").value) || 0;
+  const legs = d.legs.map((l) => ({
+    type: l.type,
+    side: l.side,
+    strike: l.strike,
+    premium: l.premium,
+    contracts,
+  }));
+
+  let stock = null;
+  if (strategySel.value === "covered-call") {
+    const vals = currentValues();
+    const current = Number(vals.currentPrice) || 0;
+    const cb = Number(vals.costBasis) > 0 ? Number(vals.costBasis) : current;
+    stock = { shares: contracts * 100, costBasis: cb };
+  }
+
+  window.Surface.update({
+    legs,
+    stock,
+    iv: Number($("ivPct").value) / 100,
+    rate: Number($("ratePct").value) / 100,
+    div: Number($("divPct").value) / 100,
+    priceLo: d.priceRange.lo,
+    priceHi: d.priceRange.hi,
+    maxDays: Number($("days").value) || 30,
+  });
 }
 
 let lastPayoffData = null;

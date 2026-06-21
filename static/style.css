@@ -272,6 +272,19 @@ select,
   cursor: crosshair;
   touch-action: none;
 }
+.opt-surface-canvas {
+  width: 100%;
+  height: 300px;
+  display: block;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: grab;
+  touch-action: none;
+}
+.opt-surface-canvas:active {
+  cursor: grabbing;
+}
 
 @media (min-width: 880px) {
   .opt-grid {

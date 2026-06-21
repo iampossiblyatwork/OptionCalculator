@@ -15,6 +15,11 @@ Covered call · cash-secured put · long call · long put · short (naked) call 
 short (naked) put · bull call spread · bear put spread. One contract = 100
 shares.
 
+The at-expiration payoff chart is paired with a **3D P/L surface** that plots
+profit/loss over both the underlying price *and* days-to-expiration, priced with
+Black–Scholes. The blue front edge (0 days left) is exactly the at-expiration
+curve; the surface behind it is time value decaying toward it. Drag to rotate.
+
 ## Covered-Call Sweet Spot
 
 Visit `/sweet-spot` for a strike × expiration heatmap that ranks covered calls by
@@ -97,7 +102,8 @@ their defaults — the Dockerfile lives at the repo root. Render provides
 - `app.py` — Flask routes: the page (`/`), the playground (`/playground`), the calc API (`/api/calculate`), health (`/healthz`)
 - `options.py` — pure trade-economics + Black–Scholes math (no dependencies)
 - `templates/index.html`, `static/` — the UI (vanilla JS, canvas payoff chart)
-- `static/bs.js` — pure JS Black–Scholes twin used by the playground (kept in parity with `options.py` via `tests/bs_parity.test.js`)
+- `static/bs.js` — pure JS Black–Scholes twin used by the playground and 3D surface (kept in parity with `options.py` via `tests/bs_parity.test.js`)
+- `static/surface.js` — 3D P/L surface (price × days-to-expiration) on the calculator page
 - `static/playground.js` — playground slider wiring + sweep chart
 - `templates/playground.html` — the Learning Playground page
 - `test_options.py` — pytest suite for the math and the API
